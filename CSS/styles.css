@@ -13,22 +13,6 @@ h1, p {
     margin: 1em auto;
 }
 
-label {
-    display: block;
-    margin: 0.5rem 0;
-}
-
-textarea::placeholder{
-    color: green;
-}
-
-form {
-    margin:0 auto;
-    max-width: 500px;
-    min-width: 300px;
-    width: 60
-}
-
 fieldset {
     border: none;
     padding: 2rem 0;
@@ -43,3 +27,24 @@ input, textarea, select {
     width: 100%;
     margin: 10px 0 0;
 }
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.inline {
+    background-color: orange;
+    
+}
+textarea::placeholder{
+    color: green;
+}
+
+form {
+    margin:0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60
+}
+
