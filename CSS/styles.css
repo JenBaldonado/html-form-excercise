@@ -35,7 +35,8 @@ label {
 
 .inline {
     background-color: orange;
-    
+    width: unset;
+    margin: 0.5em;
 }
 textarea::placeholder{
     color: green;
