@@ -32,7 +32,10 @@ label {
     display: block;
     margin: 0.5rem 0;
 }
-
+input, textarea {
+    background: rgba(221, 191, 155, 0.229);
+    border: 1px solid rgba(197, 170, 134, 0.833);
+}
 .inline {
     width: unset;
     margin: 0.5em 0 0;
