@@ -63,5 +63,9 @@ input[type="submit"] {
     margin: 0 auto;
     height: 2em;
     font-size: 1.1rem;
+    background-color: green;
+    color: white;
+    min-width: 300px;
+    margin: 1em auto;
 }
 
