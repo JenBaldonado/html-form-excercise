@@ -57,3 +57,8 @@ form {
     width: 60
 }
 
+input[type="submit"] {
+    display: block;
+    width: 60%;
+}
+
