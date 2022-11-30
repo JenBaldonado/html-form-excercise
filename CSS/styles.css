@@ -1,9 +1,15 @@
+
+:root{
+  --input-text-color:#141414;
+}
+
+
 body {
     width: 100%;
     margin: 20px;
     background: url(../Assets/startup-593341_1920.jpg)  rgb(20, 92, 160);
     background-blend-mode: overlay;
-    color: #f5f6f7;
+    color: #50555a;
     font-family: Tahoma;
     font-size: 16px;
   }
@@ -44,12 +50,17 @@ body {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+    
+  }
+
+  input:focus, textarea:focus, select:focus{
+    color:var(--input-text-color);
   }
   
   input, textarea {
     background-color: #B1D4E0;
     border: 1px solid #B1D4E0;
-    color: #ffffff;
+    color: var(--input-text-color);
   }
   
   .inline {

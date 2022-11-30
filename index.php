@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <title>HTML-FORMS-EXCERCISE-1</title>
-</head>
-<body>
+
+    <?php include('Templates/header.php') ?>
+
+    <?php 
+
+        if(isset($_POST['submit'])){
+            echo $_POST['first-name'];
+            echo $_POST['last-name'];
+            echo $_POST['password'];
+        }
+    
+    
+    
+    ?>
+
     <h1>Registration Form</h1>
     <p>Please fill out this form with the required infrmation.</p>
-    <form action="#">
+    <form action="index.php" method="POST">
         <fieldset>
             <!-- first name, last name, email, password fields -->
             <label>Enter your first name: <input type="text" name="first-name" required /></label>
             <label>Enter your last name: <input type="text" name="last-name" required /></label>
             <label>Enter your email: <input type="email" name="email" required /></label>
-            <label>Enter your password: <input type="password" name="password" pattern="[a-z0-5]{8}" required /></label>
+            <label>Enter your password: <input type="password" name="password"  required /></label>
         </fieldset>
         <fieldset>
             <label><input class="inline" type="radio" name="account-type" /> Personal account</label>
@@ -41,7 +48,7 @@
                 <textarea name="bio" id="" cols="30" rows="3" placeholder="I like coding on a rainy day ..."></textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input type="submit" name="submit" value="Submit" />
     </form> 
 </body>
 </html>
